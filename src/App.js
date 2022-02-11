@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 
 class App extends Component {
   render() {
-    return <h1>Hello world</h1>;
-  }
-}
+    // const greeting = "Hi!, Tom"
+    // const dom = <h1 className="foo">{greeting}</h1>;
+    // return dom;
 
-// JSXを使用しない場合
-// class App extends Component {
-//   render() {
-//     return React.createElement(
-//       "div",
-//       null,
-//       "Hello, world!"
-//     );
-//   }
-// }
+
+    return (
+      <React.Fragment>
+        <label htmlFor='bar'>bar</label>
+          <input id='bar' type='bar' onChange={() => console.log("I am clicked!")} />
+      </React.Fragment>
+    );
+
+  }
+
+}
 
 export default App;
