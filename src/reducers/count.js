@@ -4,7 +4,7 @@ import { INCREMENT, DECREMENT } from '../actions'
 const initialState = { value: 0 }
 
 // reducerの定義
-export default(state = initialState, action) => {
+const countEvents = (state = initialState, action) => {
 
     // 受け取ったaction typeによって分岐
     switch (action.type) {
@@ -17,3 +17,5 @@ export default(state = initialState, action) => {
             return state
     }
 }
+
+export default countEvents
